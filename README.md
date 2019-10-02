@@ -12,7 +12,7 @@ Topics:
     - Operators
     - Decision making
     - Loops
-- [Lists, Tuples, Dictionaries](#lists,-tuples,-dictionaries)
+- [Lists, Tuples, Dictionaries](#lists-tuples-dictionaries)
 - [Functions](#functions).
 - Modules.
 - Problem Solving.
