@@ -4,10 +4,10 @@
 
 Topics:
 - [Overview Language](#overview)
-- [Environment Setup](#environmentSetup)
+- [Environment Setup](#environment-setup)
     - Setup Python3
     - Virtual Environment for web application
-- [Basic Syntex](#basicSyntex)
+- [Basic Syntex](#basic-syntex)
     - Variables
     - Operators
     - Decision making
