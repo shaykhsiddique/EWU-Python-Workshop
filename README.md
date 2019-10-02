@@ -12,7 +12,7 @@ Topics:
     - Operators
     - Decision making
     - Loops
-- [Lists Tuples Dictionaries](#functions).
+- [Lists, Tuples, Dictionaries](#lists,-tuples,-dictionaries)
 - [Functions](#functions).
 - Modules.
 - Problem Solving.
@@ -51,7 +51,6 @@ Installing Python3 on:
 >Indentation is very sensitive in python. Scopes are defined by **semicolon** and **indentation**.    
 
 **Data Type Casting**
-
 ```python
     x = float(10)       #value of x will be 10.0
     y = int(5.5)        #value of y will be 2
@@ -103,7 +102,7 @@ for x in fruits:
   print(x)
 ```
 
-## Lists Tuples Dictionaries
+## Lists, Tuples, Dictionaries
 --------------------------------
 
 ## Functions
