@@ -11,9 +11,9 @@ Topics:
     - Variables
     - Operators
     - Decision making
-    - Loops.
-- Lists, Tuples,  Dictionaries.
-- Functions.
+    - Loops
+- [Lists Tuples Dictionaries](#functions).
+- [Functions](#functions).
 - Modules.
 - Problem Solving.
 - OOP in Python.
@@ -51,9 +51,60 @@ Installing Python3 on:
 >Indentation is very sensitive in python. Scopes are defined by **semicolon** and **indentation**.    
 
 **Data Type Casting**
+
 ```python
     x = float(10)       #value of x will be 10.0
     y = int(5.5)        #value of y will be 2
     z = str(20)         #value of x will be "20"
 ```
+
 **Operators:**
+- Arithmetic Operators: `+`, `-`, `*`, `/`, `+`, `%`, `**`, `//`.
+- Assignment Operators: `+=`, `-=`, `*=` etc.
+- Comparison Operators: `>`, `<`, `==`, `!=`,`>=`, `<=`.
+
+**Python Decisions:**
+
+*IF ELSE*
+```python
+    a = 43
+    b = 111
+    c = 73
+    if b > a:
+        print("b is greater than a")
+    elif a == b:
+        print("a and b are equal")
+    else:
+        print("a is greater than b")
+```
+*Joinning conditions*
+```python
+    if a > b and a > c:
+        print("a is the leargest number of all.")
+```
+**Loops:**
+*While Loop*
+```python
+    i = 1
+    while i < 6:
+        print(i)
+        i += 1
+```
+*For Loop*
+```python
+for x in range(2, 6):
+  print(x)
+  
+#loops in list
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+```
+
+## Lists Tuples Dictionaries
+--------------------------------
+
+## Functions
+--------------------------------
