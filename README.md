@@ -1,3 +1,4 @@
+
 # Workshop on Python 
 
 ![N|Solid](https://i.imgur.com/O87SYPi.png)
@@ -30,7 +31,7 @@ Python's design philosophy emphasizes code readability with its notable use of s
 - System scripting.
 
 ## Environment Setup
-------------------------------
+
 Installing Python3 on:
 - **Windows:** Download and install (*[python.org](https://www.python.org/downloads/)*).
     *Command: Based on Environment Path. Default: `python`*
@@ -44,7 +45,7 @@ Installing Python3 on:
     >Checking the Current Version of Python: `python --version` or `python3 --version`
 
 ## Basic Syntex
-------------------------------
+
 **Type of Variables:**
      ![N|Solid](https://i.imgur.com/LO2H6ST.png)
 
@@ -100,10 +101,61 @@ for x in fruits:
   if x == "banana":
     continue
   print(x)
+
 ```
+***Problem:***
+ 
+ - **Leap Year** Checking.
+ - **Even** and **odd** number from 1 to 100.
+ - Find out the numbers **divisible** by **3**, `donot use Modulus`.
 
 ## Lists, Tuples, Dictionaries
---------------------------------
+**Lists:** Python collections or arrays.
 
+```python
+	# empty list
+	my_list =  []
+
+	# list of integers
+	my_list =  [1,  2,  3]
+
+	# list with mixed datatypes
+	my_list =  [1,  "Hello",  3.4]
+```
+*Inserting & deleting values*
+```python
+	my_list =  []
+	my_list[0] = 5
+	my_list[1] = "Hello"
+	print(my_list)
+
+	del my_list[0]
+	print(my_list)
+
+	print(my_list[1][1])
+```
+*Slice lists in Python*
+```python
+	my_list =  ['p','r','o','g','r','a','m','i','z']
+	# elements 3rd to 5th
+	print(my_list[2:5])
+	
+	# elements 4th to end
+	print(my_list[3:])
+	
+#	elements beginning to 4th
+	print(my_list[:-5])
+```
+
+*Traverse in list*
+```python
+	my_list = ["apple", "banana", "cherry"] 
+	for x in my_list:
+		print(x)
+		
+#	integer type list	
+	numbers = [2, 5, 6, 1, 9, 13, 20, 11]
+	for number in numbers:
+		print(number)
+```
 ## Functions
---------------------------------
