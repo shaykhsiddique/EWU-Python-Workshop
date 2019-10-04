@@ -243,6 +243,7 @@ Consider a module to be the same as a code library.  A file containing a set of 
 	import mymodule as mymdl
 ```
 There are many build in modules.
+
 |Module|Description|
 |--|--|
 |[`math`](https://docs.python.org/3/library/math.html#module-math)|Mathematical functions (sin() etc.)|
@@ -254,6 +255,11 @@ To see all modules of python [click here](https://docs.python.org/3/py-modindex.
 
 [Go to topics](#topics)
 ## Problem Solving
+- Find the leargest number.
+- Find the repetation of strings.
+- Search a number- Linear and Binary search.
+
+Random Numbers: 81, 91, 15, 64, 66, 89, 23, 81, 62, 9, 18, 8, 26, 14, 47, 60, 60, 82, 17, 7
 
 ## Object Oriented Programming
 
