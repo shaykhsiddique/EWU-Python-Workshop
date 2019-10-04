@@ -1,5 +1,3 @@
-
-
 # Workshop on Python 
 
 ![N|Solid](https://i.imgur.com/O87SYPi.png)
@@ -20,7 +18,7 @@
 - [Modules](#modules)
 - [Problem Solving](#problem-solving)
 - [OOP in Python](#object-oriented-programming)
-- Python GUI Programming - Tkinter.
+- [Python GUI Programming - Tkinter](#python-gui-programming)
 - Building a simple application using Tkinter.
 
 
@@ -238,13 +236,19 @@ Consider a module to be the same as a code library.  A file containing a set of 
 	import mymodule  
 	
 	mymodule.greeting("Rattlesnake")
-``` 
+```
+*Other Ways*
+```python
+	from mymodule import *
+	import mymodule as mymdl
+```
 There are many build in modules.
-|Modules||
+|Module|Description|
 |--|--|
 |[`math`](https://docs.python.org/3/library/math.html#module-math)|Mathematical functions (sin() etc.)|
 |[`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing "multiprocessing: Process-based parallelism.")| Process-based parallelism |
 |[`datetime`](https://docs.python.org/3/library/datetime.html#module-datetime)|Basic date and time types.|
+|[`random`](https://docs.python.org/3/library/random.html#module-random)|Generate pseudo-random numbers with various common distributions.|
 
 To see all modules of python [click here](https://docs.python.org/3/py-modindex.html).
 
@@ -252,3 +256,132 @@ To see all modules of python [click here](https://docs.python.org/3/py-modindex.
 ## Problem Solving
 
 ## Object Oriented Programming
+
+*Classes/objects define*
+```python
+	class MyClass:  
+		x = 5
+
+	# declear a class
+	p1 = MyClass()  
+	print(p1.x)
+```
+
+> Frist letter of class name is capital. It's not a rule but all programmers follow this.
+
+The examples above are classes and objects in their simplest form, and are not really useful in real life applications.
+
+**Cnstructor:** A special type of function which will autometically execute when creating a object.
+```python
+	#self is the current object variable name
+	class Person:  
+		def __init__(self, name, age):  
+			self.name = name  
+			self.age = age  
+	
+	  
+	p1 = Person("Alice", 28)    
+	print(p1.name)  
+	print(p1.age)
+```
+
+**Inheritance in Python**
+```python
+	from math import *
+	
+	class Shape:
+		def __init__(self, length):
+			self.length = length
+			
+		def getLength(self):
+			return self.length
+
+	class Circle(Shape):
+		def area(self):
+			return acos(-1)*(self.length ** 2)
+	
+	class Rectangle(Shape):
+		def __init__(self, length, width):
+			self.length = length
+			self.width = width
+		def area(self):
+			return self.length*self.width
+	
+```
+[Go to topics](#topics)
+## Python GUI Programming
+*Most popular GUIs*
+
+ - Tkinter
+ - JPython
+ - wxPython
+ - PyQt
+ 
+### Tkinter
+Tkinter is the Python interface to the Tk GUI toolkit shipped with Python.
+*Example*
+```python
+	import tkinter
+	window = tkinter.Tk()
+	# your modification goes here
+	window.mainloop() 
+```
+**Widgets: ** There are many build-in widgets in Tkinter( [see all from here](https://www.tutorialspoint.com/python3/python_gui_programming.htm)
+)
+
+Greeting Apps
+```python
+import tkinter
+import random
+
+
+window = tkinter.Tk() 
+window.title("App Title")
+window.geometry("450x350")
+# window.configure(bg="sky blue")
+
+
+def helloCallBack():
+	msg = ["Hello", "Hi", "Nice to meet you, ", "Welcome", "Good morning", "Good evening, ", "It’s a pleasure to meet you, ", "Good day, "]
+	output = tkinter.Text(window, width=40, height=5)
+	output.grid(columnspan=5, row=6)
+	output.insert(tkinter.END, msg[random.randint(0, 7)]+" "+str(E1.get())+".")
+
+
+
+
+LH = tkinter.Label(window, text = "Greeting Apps", font=("Courier", 30, "bold"))
+LH.grid(column=1, row=0)
+
+window.grid_rowconfigure(1, minsize=20)
+
+L1 = tkinter.Label(window, text = "Your name: ")
+L1.grid(column=0, row=2)
+
+E1 = tkinter.Entry(window, bd = 5, width=50)
+E1.grid(column=1, row=2)
+
+window.grid_rowconfigure(3, minsize=20)
+
+B1 = tkinter.Button(window, text = "Click Me", command = helloCallBack)
+B1.grid(column=1, row=4)
+
+window.grid_rowconfigure(5, minsize=20)
+
+window.mainloop()
+ ```
+
+### Some System Apps Idea:
+- Calculator
+- Strong Password Generator
+- Media Player
+- Snake Game
+- Weather Reporter
+- Currency Converter
+- Phone Book
+- Tax Calculator
+- Automated Email Sander.
+- Network Monitoring Apps.
+- Machine Learning Related - Persional Assistant, Translator, Object Identification etc.
+
+[Go to topics](#topics)
