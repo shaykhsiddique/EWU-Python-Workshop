@@ -1,6 +1,6 @@
 # Workshop on Python 
 
-![N|Solid](https://i.imgur.com/O87SYPi.png)
+![N|Solid](https://i.imgur.com/D2sOOsd.jpg)
 
 ### Topics:
 
