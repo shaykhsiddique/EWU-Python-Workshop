@@ -1,4 +1,5 @@
 
+
 # Workshop on Python 
 
 ![N|Solid](https://i.imgur.com/O87SYPi.png)
@@ -14,9 +15,9 @@ Topics:
     - Decision making
     - Loops
 - [Lists, Tuples, Dictionaries](#lists-tuples-dictionaries)
-- [Functions](#functions).
-- Modules.
-- Problem Solving.
+- [Functions](#functions)
+- [Modules](#modules)
+- [Problem Solving](#problem-solving)
 - OOP in Python.
 - Python GUI Programming - Tkinter.
 - Building a simple application using Tkinter.
@@ -110,7 +111,7 @@ for x in fruits:
  - Find out the numbers **divisible** by **3**, `donot use Modulus`.
 
 ## Lists, Tuples, Dictionaries
-**Lists:** Python collections or arrays.
+**Lists/Tuples:** Python collections or arrays.
 
 ```python
 	# empty list
@@ -152,10 +153,94 @@ for x in fruits:
 	my_list = ["apple", "banana", "cherry"] 
 	for x in my_list:
 		print(x)
-		
+	print(len(my_list))  #find out the length of array
+	
 #	integer type list	
 	numbers = [2, 5, 6, 1, 9, 13, 20, 11]
 	for number in numbers:
 		print(number)
 ```
+
+<br/> <br/>
+
+***Dictionaries:*** Python dictionary is like associative array.
+```python
+	#declaration of dictionary 
+	thisdict =  { "brand": "Ford", "model": "Mustang", "year": 1964 }
+	my_dict = dict()
+``` 
+*Value insert/update and delete*
+```python
+	thisdict["year"] = 2018
+	thisdict.update({"color": "Grey"}) 
+```
+*Traverse in dictionary* 
+```python
+	# print keys
+	for x in thisdict:  
+		print(x)
+		
+	# print values
+	for x in thisdict.values():
+		print(x)
+		
+	# print both keys and values
+	for x_key, y_val in thisdict.items():
+		print(x_key, y_val )
+
+```
 ## Functions
+Function is something like a machine. There will be some inputs and based on input it will generating some output.
+```python
+	def my_function():  
+		print("Hello from a function")
+	
+	#call function
+	my_function()
+```
+*Functions with parameters*
+```python
+	def my_function(name):  
+		print("Hello" + name)
+		
+	my_function("Alice")
+	my_function("Charlie")
+```
+*Functions with parameters & return value*
+```python
+#set default value 5, if function is not called with parameter
+	def my_function(a = 5):  
+		b = a * 5
+		return b
+	
+	result = my_function(3)
+	print(result)
+	
+	result = my_function()
+	print(result)
+```
+
+## Modules
+Consider a module to be the same as a code library.  A file containing a set of functions you want to include in your application.
+*Save this file named with `mymodules.py`*
+```python
+	def greeting(name):  
+		print("Hello, " + name)
+```
+*In other file from the same directory:*
+```python
+	import mymodule  
+	
+	mymodule.greeting("Rattlesnake")
+``` 
+There are many build in modules.
+
+|Modules|-|
+|--|--|
+|[`math`](https://docs.python.org/3/library/math.html#module-math)|Mathematical functions (sin() etc.)|
+|[`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing "multiprocessing: Process-based parallelism.")| Process-based parallelism |
+|[`datetime`](https://docs.python.org/3/library/datetime.html#module-datetime)|Basic date and time types.|
+
+To see all modules of python [click here](https://docs.python.org/3/py-modindex.html).
+
+## Problem Solving
