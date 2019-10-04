@@ -4,8 +4,9 @@
 
 ![N|Solid](https://i.imgur.com/O87SYPi.png)
 
-Topics:
-- [Overview Language](#overview)
+### Topics:
+
+ - [Overview Language](#overview)
 - [Environment Setup](#environment-setup)
     - Setup Python3
     - Virtual Environment for web application
@@ -18,7 +19,7 @@ Topics:
 - [Functions](#functions)
 - [Modules](#modules)
 - [Problem Solving](#problem-solving)
-- OOP in Python.
+- [OOP in Python](#object-oriented-programming)
 - Python GUI Programming - Tkinter.
 - Building a simple application using Tkinter.
 
@@ -44,6 +45,8 @@ Installing Python3 on:
     *Command: For different versions of installing - python2: `python`, python3: `python3`.*
 
     >Checking the Current Version of Python: `python --version` or `python3 --version`
+
+[Go to topics](#topics)
 
 ## Basic Syntex
 
@@ -109,7 +112,9 @@ for x in fruits:
  - **Leap Year** Checking.
  - **Even** and **odd** number from 1 to 100.
  - Find out the numbers **divisible** by **3**, `donot use Modulus`.
-
+ 
+ [Go to topics](#topics)
+ 
 ## Lists, Tuples, Dictionaries
 **Lists/Tuples:** Python collections or arrays.
 
@@ -189,6 +194,7 @@ for x in fruits:
 		print(x_key, y_val )
 
 ```
+[Go to topics](#topics)
 ## Functions
 Function is something like a machine. There will be some inputs and based on input it will generating some output.
 ```python
@@ -234,8 +240,7 @@ Consider a module to be the same as a code library.  A file containing a set of 
 	mymodule.greeting("Rattlesnake")
 ``` 
 There are many build in modules.
-
-|Modules|-|
+|Modules||
 |--|--|
 |[`math`](https://docs.python.org/3/library/math.html#module-math)|Mathematical functions (sin() etc.)|
 |[`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing "multiprocessing: Process-based parallelism.")| Process-based parallelism |
@@ -243,4 +248,7 @@ There are many build in modules.
 
 To see all modules of python [click here](https://docs.python.org/3/py-modindex.html).
 
+[Go to topics](#topics)
 ## Problem Solving
+
+## Object Oriented Programming
